@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EEEE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:text="Fragment in android"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Frag_01"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:background="#F4C7C7"
+        android:text="Frag_01"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_Frag_02"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="88dp"
+        android:background="#F4C7C7"
+        android:text="Frag_02"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Frag_01"
+        app:layout_constraintStart_toEndOf="@+id/btn_Frag_01"
+        app:layout_constraintTop_toTopOf="@+id/btn_Frag_01"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.android_week_06.Fragment_02"
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Frag_01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
